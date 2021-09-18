@@ -1,5 +1,5 @@
 const textBox = document.getElementById("text");
-const tooltip = document.getElementById("myTooltip");
+const tooltip = document.getElementById("copy-tooltip");
 
 //Convert!
 document.getElementById("convert").addEventListener("click", function() {
@@ -10,7 +10,7 @@ document.getElementById("convert").addEventListener("click", function() {
   else {
     let result = textBox.innerHTML = textBox.innerHTML.toLowerCase().replace(/o/g, "O");
     // result = result.replace('<br>','').replace('&nbsp;','');
-    console.log(result);
+    // console.log(result);
   }
 });
 
@@ -19,8 +19,6 @@ document.getElementById("copy").addEventListener("click", function() {
   let r = document.createRange();
   // console.log(r);
   r.selectNodeContents(document.getElementById("text"));
-  //omg
-  // console.log(r.selectNode(document.getElementById("text")));
   window.getSelection().removeAllRanges();
   window.getSelection().addRange(r);
   document.execCommand("copy");
