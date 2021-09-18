@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>OnlyOneOf-inator</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Only<span id="one">One</span>Of-inator</h1>
+      <p>
+        Inspired by the unique case styling Of OnlyOneOf, the OnlyOneOf-inatOr
+        will cOvert all O's tO uppercase and cOnvert all Other letters tO
+        lOwercase.
+      </p>
+      <p>Try it out on this page by clicking the button below!</p>
+
+      <a
+        href="javascript:void%20function(){javascript:(function(){function%20a(b){b.childNodes.forEach(function(b){3===b.nodeType%3F%22%22!==b.nodeValue.trim()%26%26(b.nodeValue=b.nodeValue.toLowerCase().replace(/o/g,%22O%22)):a(b)})}a(document.querySelector(%22body%22))})()}();"
+        id="bookmarklet"
+        class="btn"
+        >OnlyOneOf-inate</a
+      >
+      <p>
+        <i class="fas fa-arrow-up"></i><br />Drag this button into your
+        bookmarks bar to use it on any site!
+      </p>
+
+      <h2>Paste or type your text below</h2>
+
+      <div id="text-container">
+        <div id="text" contenteditable="true">Hello Lyon!</div>
+      </div>
+
+      <span id="convert" class="btn" tabindex="0"> cOnvert </span>
+
+      <div class="tooltip">
+        <span id="copy" class="btn" tabindex="0">
+          <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+          Copy text
+        </span>
+      </div>
+      <br /><br />
+      <input type="checkbox" id="case-styling" />
+      <label for="case-styling">Retain uppercases</label>
+    </div>
+  </body>
+</html>
